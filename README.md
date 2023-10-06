@@ -1,5 +1,3 @@
-
-```markdown
 # FastAPI Sample App
 
 This is a sample FastAPI application that demonstrates how to create a FastAPI web service. This README provides step-by-step instructions on how to set up and run the application.
