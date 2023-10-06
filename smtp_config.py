@@ -16,7 +16,7 @@ def send_email(message: Message):
         msg['To'] = message.to
         msg['Subject'] = message.subject
 
-        msg.attach(MIMEText(message.content, 'plain'))
+        msg.attach(MIMEText(message.message, 'plain'))
 
         smtp_connection.sendmail(EMAIL_HOST_USER, message.to, msg.as_string())
 
