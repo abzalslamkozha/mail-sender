@@ -6,3 +6,12 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+    depends_on:
+      - test
+    command: ["python", "main.py"]
+
+  test:
+    build: .
+    volumes:
+      - .:/app
+    command: ["pytest", "tests/"]  # Change this path to your test directory if necessary
